@@ -10,7 +10,7 @@ This project focuses on extending redescription mining with sequential pattern m
     - Apply sequential pattern mining on \(V_s\) to find candidate subsequence patterns.
 
 2. **Initial Label Selection**:
-    - Select the initial labels from \(V_a\) and \(V_s\). More details are discussed in the [Initial Label Selection](#initial-label-selection) section.
+    - Select the initial labels from \(V_a\) and \(V_s\).
 
 3. **Processing Each Initial Label**:
     - For each initial label:
@@ -19,8 +19,7 @@ This project focuses on extending redescription mining with sequential pattern m
             - Extract a query \(q_a\) from the decision tree.
         2. **Query Matching**:
             - Search the mined subsequence patterns.
-            - Find a matching query \(q_s\) with \(q_a\) to complete the pair. More details are discussed in the [Query Matching](#query-matching) section.
-        3. **Decision Tree Iteration**:
+            - Find a matching query \(q_s\) with \(q_a\) to complete the pair. 
             - Grow a new decision tree over \(V_a\) based on \(supp(q_s)\).
             - Find a new query \(q'_a\).
             - Find a new matching query \(q_s\) from subsequence patterns with \(q'_a\) to complete the pair.
